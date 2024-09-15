@@ -1,0 +1,142 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 1vw;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+body
+{
+    background:url('./binary-1316395_1920.jpg') center;
+    background-color: black;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+.container
+{
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+
+}
+.container>h1
+{
+    width:100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+    color: #52bf04;
+    margin-bottom: 1rem;
+    font-family: "Roboto", system-ui;
+    font-weight: 900;
+}
+.input
+{
+    font-size: 2rem;
+    background: none;
+    border: 0;
+    border: .4rem solid rgb(84, 84, 84);
+    background-color: rgba(41, 41, 41, 0.467);
+    border-radius: 1rem;
+    text-align: center;
+    width:32vw;
+    padding: .8rem 1rem;
+    outline: none;
+    cursor: pointer;
+    color: rgb(194, 194, 194);
+    margin-bottom: 2rem;
+    transition: all .3s ease;
+    font-weight: 700;
+}
+.input::-webkit-inner-spin-button
+{
+    display: none;
+}
+.input:focus
+{
+    border: .4rem solid #317302;
+    background-color: #10260189;
+    cursor: text;
+}
+.buttonsContainer
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.chosen
+{
+    color: white !important;
+    background: #317302 !important;
+    border: .3rem solid #317302 !important;
+}
+.buttonsContainer>button
+{
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    background: rgb(53, 53, 53);
+    border:.3rem solid rgb(79, 79, 79);
+    color: rgb(172, 172, 172);
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.result
+{
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
+    max-width:100%;
+    text-align: center;
+    font-size:5rem;
+    font-weight: 900;
+    color: #69f207;
+    margin-top: 2rem;
+}
+@media (max-width:550px)
+{
+    
+    html
+    {
+        font-size: 3vw;
+    }
+    .container
+    {
+        padding: 0 1rem;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.546);
+        backdrop-filter: blur(20px);
+        overflow: hidden;
+    }
+    .container>h1
+    {
+        font-size: 5rem;
+    }
+    .input
+    {
+        width: 80vw;
+    }
+    .buttonsContainer>button
+    {
+        width: 36vw;
+    }
+    .result
+    {
+        margin-top: 1rem;
+    }
+}
+
